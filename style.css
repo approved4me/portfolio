@@ -13,6 +13,28 @@ body {
     color: #fff
 }
 
+section {
+    height: 100vh;
+}
+.main_navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+nav a {
+    text-decoration: none;
+}
+
 h1 {
     max-width: 20ch;
     line-height: 1.2;
@@ -27,13 +49,8 @@ p {
     color: #ddd;
 }
 
-p:before {
-    content: "";
-    border-bottom: 1px solid #fff;
-    width: 2ch;
-    position: relative;
-    top: -4px;
-    display: inline-block;
-    left: 0;
-    margin-right: 2ch;
+
+p span {
+    font-size: 20px;
+    line-height: 1;
 }
