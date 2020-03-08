@@ -17,6 +17,15 @@ section {
     height: 100vh;
 }
 
+.dev, code1 {
+    width: 80%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .logo {
     width: 80px;
 }
@@ -28,6 +37,7 @@ section {
 .main_navigation {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 30px;
     font-size: .8em;
 }
