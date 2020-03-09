@@ -13,8 +13,15 @@ body {
     color: #fff
 }
 
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 section {
     height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .dev, code1 {
@@ -24,6 +31,7 @@ section {
 img {
     max-width: 100%;
     height: auto;
+    grid-column: 1 / 3;
 }
 
 .logo {
@@ -60,7 +68,8 @@ nav a {
 
 h1 {
     max-width: 20ch;
-    line-height: 1.3;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
 }
 
 h1 span {
@@ -74,6 +83,8 @@ p {
     line-height: 1.7;
     font-size: 0.8em;
     color: #ddd;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
 }
 
 
