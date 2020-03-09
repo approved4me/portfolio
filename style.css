@@ -21,17 +21,32 @@ body {
 section {
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
-.dev, code1 {
-    width: 80%;
+.content {
+    grid-column: 2 / 5;
+    grid-row: 2 / 2;
+    align-self: center;
 }
 
+
+.dev {
+    grid-column: 4 / 9;
+    grid-row: 2 / 2;
+    z-index: -5
+}
+
+.code1 {
+    grid-column: 1 / 9;
+    align-self: stretch;
+    z-index: -15;
+}
 img {
     max-width: 100%;
     height: auto;
-    grid-column: 1 / 3;
+
 }
 
 .logo {
@@ -68,8 +83,8 @@ nav a {
 
 h1 {
     max-width: 20ch;
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
+    font-size: 2em;
+
 }
 
 h1 span {
@@ -83,8 +98,7 @@ p {
     line-height: 1.7;
     font-size: 0.8em;
     color: #ddd;
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
+
 }
 
 
