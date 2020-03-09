@@ -19,10 +19,11 @@ body {
 }
 
 section {
-    height: 100vh;
+/*    height: 100vh;*/
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+/*    grid-template-rows: repeat(2, 1fr);*/
+
 }
 
 .content {
@@ -33,19 +34,29 @@ section {
 
 
 .dev {
-    grid-column: 4 / 9;
+    grid-column: 4 / 8;
     grid-row: 2 / 2;
     z-index: -5
 }
 
 .code1 {
-    grid-column: 1 / 9;
-    align-self: stretch;
+    grid-column: 4 / 8;
     z-index: -15;
+    margin-bottom: -15em;
+    filter: opacity(.2);
 }
+
+.code2 {
+    grid-column: 4 / 8;
+    z-index: -15;
+    margin-top: -15em;
+    filter: opacity(.2);
+}
+
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 
 }
 
